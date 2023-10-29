@@ -24,3 +24,7 @@ added a dropdown menu to the nav bar
 
 1509
 added three new class libraries and moved Data folder to DataAccess 
+
+1523
+istalled packages  Version="5.0.17" 
+deleted migration folder
