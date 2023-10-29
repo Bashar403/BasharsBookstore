@@ -40,3 +40,6 @@ modifid the startups and corrected errorviewmodels
 
 1727
 added customer area and modified startup and moved the controller file
+
+1734
+coppied the viewstart file and pasted in the Custormer area
