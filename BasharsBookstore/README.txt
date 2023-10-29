@@ -34,3 +34,6 @@ deleted all classes and edited the name space
 
 1541
 moved the models folder to the new project and renamed it and changed the namespace 
+
+1718
+modifid the startups and corrected errorviewmodels
