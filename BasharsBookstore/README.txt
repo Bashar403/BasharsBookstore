@@ -12,3 +12,6 @@ downloaded bootstrap and css files and replaced them with the existing files
 
 1429
 edited the styling in layout.schtml
+
+1432
+edited the style in loginpartial to change the color from dark to white 
