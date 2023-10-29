@@ -43,3 +43,6 @@ added customer area and modified startup and moved the controller file
 
 1734
 coppied the viewstart file and pasted in the Custormer area
+
+1740
+added admin area and deleted the models and data folders
