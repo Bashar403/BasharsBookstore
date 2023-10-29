@@ -15,3 +15,6 @@ edited the styling in layout.schtml
 
 1432
 edited the style in loginpartial to change the color from dark to white 
+
+1436
+added aditional stylesheets and scripts
