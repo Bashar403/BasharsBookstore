@@ -28,3 +28,6 @@ added three new class libraries and moved Data folder to DataAccess
 1523
 istalled packages  Version="5.0.17" 
 deleted migration folder
+
+1535 
+deleted all classes and edited the name space
