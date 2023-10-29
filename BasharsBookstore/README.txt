@@ -14,7 +14,10 @@ downloaded bootstrap and css files and replaced them with the existing files
 edited the styling in layout.schtml
 
 1432
-edited the style in loginpartial to change the color from dark to white 
+the edited the style in loginpartial to change the color from dark to white 
 
 1436
 added aditional stylesheets and scripts
+
+1457
+added a dropdown menu to the nav bar 
