@@ -31,3 +31,6 @@ deleted migration folder
 
 1535 
 deleted all classes and edited the name space
+
+1541
+moved the models folder to the new project and renamed it and changed the namespace 
