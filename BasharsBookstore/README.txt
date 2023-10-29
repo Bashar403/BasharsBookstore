@@ -37,3 +37,6 @@ moved the models folder to the new project and renamed it and changed the namesp
 
 1718
 modifid the startups and corrected errorviewmodels
+
+1727
+added customer area and modified startup and moved the controller file
