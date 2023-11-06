@@ -46,3 +46,12 @@ coppied the viewstart file and pasted in the Custormer area
 
 1740
 added admin area and deleted the models and data folders
+
+2023-11-06 Part 2
+
+1106
+built the application and confirmed there are no errors
+
+1112 
+added new migration to dataaccess with the name 
+AddBooksTable
