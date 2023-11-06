@@ -55,3 +55,12 @@ built the application and confirmed there are no errors
 1112 
 added new migration to dataaccess with the name 
 AddBooksTable
+
+1115
+checked the appliction for errors and no problems so far.
+
+1120 
+added a Category class and modifiy it 
+
+1143
+updated application db and delted old migration and added the new one 
