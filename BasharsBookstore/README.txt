@@ -64,3 +64,6 @@ added a Category class and modifiy it
 
 1143
 updated application db and delted old migration and added the new one 
+
+1152 
+added IRepo folders and classes and modified it 
