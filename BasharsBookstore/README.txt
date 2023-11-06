@@ -74,3 +74,6 @@ updated Repo class
 
 1321
 updated  Category Repository and IcategoryRepo
+
+1347
+added IspCall and sp_call and modified both of them 
