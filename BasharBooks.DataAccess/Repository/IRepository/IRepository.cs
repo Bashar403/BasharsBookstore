@@ -16,5 +16,15 @@ namespace BasharBooks.DataAccess.Repository.IRepository
             Func<IQueryable<T>, IOrderedQueryable<T>> orderby = null,
             string includeProperties = null
             );
+        T GetFirstOrDefault(
+            Expression<Func<T, bool>> filter = null,
+            string includeProperties = null
+            );
+        void Add(T entity);
+        void Remove(int id);
+
+        void Remove(T entity);
+        void RemoveRange(IEnumerable<T> entity);
+
     }
 }
