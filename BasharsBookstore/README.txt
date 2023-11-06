@@ -71,3 +71,6 @@ added 4 new mothods the Irepo class
 
 1208
 updated Repo class 
+
+1321
+updated  Category Repository and IcategoryRepo
