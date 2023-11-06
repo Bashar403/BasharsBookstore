@@ -68,3 +68,6 @@ updated application db and delted old migration and added the new one
 1152 
 added IRepo folders and classes and modified it 
 added 4 new mothods the Irepo class
+
+1208
+updated Repo class 
