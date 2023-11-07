@@ -99,3 +99,7 @@ update the html and added asp action \
 
 2254
 updated the category controller to implement the edit and create
+
+2342
+update the category controller to implement the delete function
+also added a delete function to javascript.
