@@ -87,3 +87,6 @@ created a category controller and modified it
 
 2137
 added a new category with an index.cshtml and coppied the code found in the assignment 2 folder
+
+2142 
+added a new nav link in the dropdown list to link the Category page
