@@ -90,3 +90,6 @@ added a new category with an index.cshtml and coppied the code found in the assi
 
 2142 
 added a new nav link in the dropdown list to link the Category page
+
+2209
+added 2 cshtml creat and edit
