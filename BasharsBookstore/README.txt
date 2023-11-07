@@ -84,3 +84,6 @@ ran into 2 errors that the UnitOfWork class you are trying to register with depe
 
 2128
 created a category controller and modified it 
+
+2137
+added a new category with an index.cshtml and coppied the code found in the assignment 2 folder
