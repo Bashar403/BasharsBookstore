@@ -39,6 +39,28 @@ namespace BasharsBookstore.Areas.Admin.Controllers
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public IActionResult Upsert (Category category)
+        {
+            if(ModelState.IsValid)
+            {
+                if(category.Id == 0)
+                {
+                    _unitOfWork.Category.Add(category);
+                    _unitOfWork.Save();
+                }
+                else
+                {
+                    _unitOfWork.Category.Update(category);
+                }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(category);
+        }
+
         #region API CALLS
         [HttpGet]
         public IActionResult GetAll()
