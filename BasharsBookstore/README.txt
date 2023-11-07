@@ -77,3 +77,9 @@ updated  Category Repository and IcategoryRepo
 
 1347
 added IspCall and sp_call and modified both of them 
+
+2113
+added Unitofwork and IUnitOfWork and modified 
+ran into 2 errors that the UnitOfWork class you are trying to register with dependency injection do not implement the IUnitOfWork interface, also the IUnitOfWork was named wrong.
+
+
