@@ -1,4 +1,5 @@
-﻿2023-10-29 1410
+﻿2023-10-29 1410  Last Modified 2023-11-13
+
 Created an asp.net web app using core 5.0 and named it basharsbook store
 
 1412
@@ -103,3 +104,7 @@ updated the category controller to implement the edit and create
 2342
 update the category controller to implement the delete function
 also added a delete function to javascript.
+
+
+2023-11-13 1454
+updated the category controller inside the areas file where i added a cateory inside the retruen statement
