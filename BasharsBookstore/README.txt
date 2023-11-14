@@ -108,3 +108,6 @@ also added a delete function to javascript.
 
 2023-11-13 1454
 updated the category controller inside the areas file where i added a cateory inside the retruen statement
+
+2023-11-14
+modifed the content in the appsettings.json and added migaration 20231106161216_AddBooksTable
