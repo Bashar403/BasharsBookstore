@@ -140,3 +140,6 @@ added Product.cs in the Models and all the properties with validations
 
 1636
 added migration and updated database 20231119213520_AddProductToDb.cs
+
+1645
+Updated the Product class so Title, ISBN and Author are [Required], created a new migration (addValidationToProduct) and update the database

@@ -9,10 +9,14 @@ namespace BasharBooks.Models
     public class Product
     {
         [Key]
+
+        [Required] 
         public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
+        [Required]
         public string ISBN { get; set; }
+        [Required]
         public string Author { get; set; }
         [Required]
         [Range(1, 10000)]
