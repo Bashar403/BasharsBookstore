@@ -134,3 +134,6 @@ created the Covertype controller with all required action methods used the previ
 
 1623 
 created the index and upsert for covertypes fix all the errors small problem that when the create button is pressed nothing is happenening will go back to that
+
+1627
+added Product.cs in the Models and all the properties with validations
