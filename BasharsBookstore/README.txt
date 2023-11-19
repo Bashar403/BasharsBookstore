@@ -113,3 +113,7 @@ Added ICoverTypeRepository Class that defines the contract for the CoverTypeRepo
 
 1434
 updated the CoverTypeRepository mplements the ICoverTypeRepository interface. It contains basic structure for now 
+
+1443
+updated the IUnitOfWork and unitofwork to implement CoverType
+
