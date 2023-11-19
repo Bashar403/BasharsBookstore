@@ -122,3 +122,6 @@ updated the CoverTypeRepo to implement actual logic for interacting with the dat
 
 1449
 fixed 2 errors first i had to make the models class public and eddited the ApplicationDbContext class to define the DbSet property for the CoverType entity also added a using statment to the Covertyperepo to use the models
+
+1508
+added Migration to the CoverType 20231119200709_AddCoverType and upadted the database
