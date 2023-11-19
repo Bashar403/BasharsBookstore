@@ -143,3 +143,6 @@ added migration and updated database 20231119213520_AddProductToDb.cs
 
 1645
 Updated the Product class so Title, ISBN and Author are [Required], created a new migration (addValidationToProduct) and update the database
+
+1652
+Add Product to the Repository and updated it accordinly used the old repos as a template
