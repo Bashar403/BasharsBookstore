@@ -1,5 +1,5 @@
 ﻿using BasharBooks.DataAccess.Repository.IRepository;
-using BasharsBookstore.Models;
+using BasharBooks.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BasharsBookstore.Areas.Admin.Controllers
@@ -27,7 +27,7 @@ namespace BasharsBookstore.Areas.Admin.Controllers
                 return View(coverType);
             }
 
-            coverType = _unitOfWork.CoverType.Get(id.GetValueOrDefault());
+            coverType = _unitOfWork.CoverType.GetById(id.GetValueOrDefault());
             if (coverType == null)
             {
                 return NotFound();
@@ -67,12 +67,12 @@ namespace BasharsBookstore.Areas.Admin.Controllers
         [HttpDelete]
         public IActionResult Delete(int id)
         {
-            var objFromDb = _unitOfWork.CoverType.Get(id);
+            var objFromDb = _unitOfWork.CoverType.GetById(id);
             if (objFromDb == null)
             {
                 return Json(new { success = false, message = "Error while deleting" });
             }
-            _unitOfWork.CoverType.Remove(objFromDb);
+            _unitOfWork.CoverType.Remove(id);
             _unitOfWork.Save();
             return Json(new { success = true, message = "Delete successful" });
         }

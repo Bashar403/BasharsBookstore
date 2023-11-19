@@ -131,3 +131,6 @@ Updated _Layout.cshtml add a new list item (<li>) with a link (<a>) for "Cover T
 
 1521
 created the Covertype controller with all required action methods used the previous controller as a templete 
+
+1623 
+created the index and upsert for covertypes fix all the errors small problem that when the create button is pressed nothing is happenening will go back to that
