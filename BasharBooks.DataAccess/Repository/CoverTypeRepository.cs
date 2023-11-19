@@ -19,37 +19,39 @@ namespace BasharBooks.DataAccess.Repository
         }
         public void Add(CoverType coverType)
         {
-            throw new NotImplementedException();
+            _db.CoverTypes.Add(coverType);
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _db.Dispose();
         }
 
         public IEnumerable<CoverType> GetAll()
         {
-            throw new NotImplementedException();
+            return _db.CoverTypes.ToList();
         }
 
         public CoverType GetById(int id)
         {
-            throw new NotImplementedException();
+            return _db.CoverTypes.Find(id);
         }
 
         public void Remove(int id)
         {
-            throw new NotImplementedException();
+            var coverType = _db.CoverTypes.Find(id);
+            if (coverType != null)
+                _db.CoverTypes.Remove(coverType);
         }
 
         public void Save()
         {
-            throw new NotImplementedException();
+            _db.SaveChanges();
         }
 
         public void Update(CoverType coverType)
         {
-            throw new NotImplementedException();
+            _db.Dispose();
         }
     }
 }

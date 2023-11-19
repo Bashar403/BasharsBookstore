@@ -117,3 +117,5 @@ updated the CoverTypeRepository mplements the ICoverTypeRepository interface. It
 1443
 updated the IUnitOfWork and unitofwork to implement CoverType
 
+1449
+updated the CoverTypeRepo to implement actual logic for interacting with the database and performing CRUD operations on CoverType entities
