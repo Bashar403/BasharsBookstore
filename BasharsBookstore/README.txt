@@ -153,3 +153,6 @@ updated the IUnitOfWork and unitofwork to implement Products build the project n
 1706
 
 added the webhostEnvironment call and the using statment and changed the public product method
+
+1849
+installed the rendering packages created the controller and updated the controller 
