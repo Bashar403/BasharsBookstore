@@ -107,3 +107,6 @@ also added a delete function to javascript.
 2023-11-19 1405 starting with part 3 section 1 
 
 created Covertype model with Id and Name
+
+1423
+updated the ICoverTypeRepository to include methods for basic CRUD operations on CoverType
