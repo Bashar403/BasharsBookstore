@@ -110,3 +110,6 @@ created Covertype model with Id and Name
 
 1423
 updated the ICoverTypeRepository to include methods for basic CRUD operations on CoverType
+
+1424
+updated the CoverTypeRepository to implement the iCoverTypeRepository interface and added a basic structure to the class 
