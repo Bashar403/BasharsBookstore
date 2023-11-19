@@ -147,5 +147,9 @@ Updated the Product class so Title, ISBN and Author are [Required], created a ne
 1652
 Add Product to the Repository and updated it accordinly used the old repos as a template
 
-1554
+1654
 updated the IUnitOfWork and unitofwork to implement Products build the project nad there are no errors 
+
+1706
+
+added the webhostEnvironment call and the using statment and changed the public product method
