@@ -128,3 +128,6 @@ added Migration to the CoverType 20231119200709_AddCoverType and upadted the dat
 
 1512
 Updated _Layout.cshtml add a new list item (<li>) with a link (<a>) for "Cover Type"
+
+1521
+created the Covertype controller with all required action methods used the previous controller as a templete 
