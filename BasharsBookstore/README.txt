@@ -137,3 +137,6 @@ created the index and upsert for covertypes fix all the errors small problem tha
 
 1627
 added Product.cs in the Models and all the properties with validations
+
+1636
+added migration and updated database 20231119213520_AddProductToDb.cs
