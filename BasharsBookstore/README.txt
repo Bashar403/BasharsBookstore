@@ -125,3 +125,6 @@ fixed 2 errors first i had to make the models class public and eddited the Appli
 
 1508
 added Migration to the CoverType 20231119200709_AddCoverType and upadted the database
+
+1512
+Updated _Layout.cshtml add a new list item (<li>) with a link (<a>) for "Cover Type"
