@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BasharsBookstore.DataAccess.Data;
 using BasharsBookstore.Models;
 using BasharBooks.DataAccess.Repository.IRepository;
+using BasharBooks.Models;
 
 namespace BasharBooks.DataAccess.Repository
 {

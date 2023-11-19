@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BasharBooks.Models
 {
-    class CoverType
+    public class CoverType
     {
         public int Id { get; set; }
         public string Name { get; set; }

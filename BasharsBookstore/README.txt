@@ -119,3 +119,6 @@ updated the IUnitOfWork and unitofwork to implement CoverType
 
 1449
 updated the CoverTypeRepo to implement actual logic for interacting with the database and performing CRUD operations on CoverType entities
+
+1449
+fixed 2 errors first i had to make the models class public and eddited the ApplicationDbContext class to define the DbSet property for the CoverType entity also added a using statment to the Covertyperepo to use the models
