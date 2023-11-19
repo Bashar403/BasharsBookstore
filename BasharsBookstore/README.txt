@@ -1,4 +1,5 @@
-﻿2023-10-29 1410
+﻿2023-10-29 1410  Last Modified 2023-11-13
+
 Created an asp.net web app using core 5.0 and named it basharsbook store
 
 1412
@@ -103,13 +104,3 @@ updated the category controller to implement the edit and create
 2342
 update the category controller to implement the delete function
 also added a delete function to javascript.
-
-2023-11-19 1405 starting with part 3 section 1 
-
-created Covertype model with Id and Name
-
-1423
-updated the ICoverTypeRepository to include methods for basic CRUD operations on CoverType
-
-1424
-updated the CoverTypeRepository to implement the iCoverTypeRepository interface and added a basic structure to the class 

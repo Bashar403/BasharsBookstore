@@ -1,19 +1,18 @@
 # Book Store Assignment
 
-This repository contains my Book Store project for Assignment 2. This assignment is worth 5% of the total grade for the course.
+This repository contains my Book Store project for Assignment 2. This assignment is worth a total of 25% of the grade for the course. The current submission, Part 2, contributes 5%.
 
-## Project Overview
+## Part 1: Initial Setup and Theme Customization
 
-The goal of this project is to create a Book Store application and modify its look and feel using a unique Bootswatch theme (not Yeti).
+- Created the initial ASP.NET Core project with a unique Bootswatch theme.
+- Initial project setup and configurations committed to GitHub.
 
-## Project Setup
+## Part 2: Database and Repository Implementation
 
-To get started with the project, I completed the following tasks:
+- Updated `appsettings.json` with new database settings.
+- Created migration files for database schema changes.
+- Implemented the Repository pattern with `CategoryRepository` & `ICategoryRepository`.
+- Established `UnitOfWork` for managing repository operations.
+- Verified application functionality in a web browser.
 
-1. Created the project and made necessary modifications to `Startup.cs`.
-2. Created a GitHub repository for the project.
-3. Modified the look and feel of the application using a custom Bootswatch theme.
-4. Added and modified project files as required.
-
-- **Name:** Bashar Matar
-
+Name: Bashar Matar
