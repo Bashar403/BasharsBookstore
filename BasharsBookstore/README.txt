@@ -104,3 +104,12 @@ updated the category controller to implement the edit and create
 2342
 update the category controller to implement the delete function
 also added a delete function to javascript.
+
+2023-11-19 
+created a Covertype model with the name of covertype.cs and added 2 properties Id and Model
+
+1435
+Added ICoverTypeRepository Class that defines the contract for the CoverTypeRepository class. It includes methods for basic CRUD operations on CoverType entities.
+
+1434
+updated the CoverTypeRepository mplements the ICoverTypeRepository interface. It contains basic structure for now 
