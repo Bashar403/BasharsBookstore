@@ -1,0 +1,133 @@
+﻿@model BasharBooks.Models.ViewModels.ProductVM
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var title = "Create Product";
+}
+
+<br />
+<div class="row p-3 border">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    @if (Model.Product.Id != 0)
+    {
+        title = "Edit Product";
+    }
+    <div class="col-12 border-bottom">
+        <h2 class="text-primary">@title</h2>
+    </div>
+    <div class="col-8 pt-4">
+        <form asp-action="Upsert" method="post" enctype="multipart/form-data">
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Product.Title"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Product.Title" class="form-control">
+                    <span asp-validation-for="Product.Title" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Product.ISBN"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Product.ISBN" class="form-control">
+                    <span asp-validation-for="Product.ISBN" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Product.Author"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Product.Author" class="form-control">
+                    <span asp-validation-for="Product.Author" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Product.Description"></label>
+                </div>
+                <div class="col-8">
+                    <textarea asp-for="Product.Description" class="form-control" id="description"></textarea>
+                    <span asp-validation-for="Product.Description" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Product.ListPrice"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Product.ListPrice" class="form-control">
+                    <span asp-validation-for="Product.ListPrice" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Product.CategoryId"></label>
+                </div>
+                <div class="col-8">
+                    <select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" class="form-control"></select>
+                    <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Product.CoverTypeId"></label>
+                </div>
+                <div class="col-8">
+                    <select asp-for="Product.CoverTypeId" asp-items="@Model.CoverTypeList" class="form-control"></select>
+                    <span asp-validation-for="Product.CoverTypeId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label asp-for="Product.ImageUrl"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="Product.ImageUrl" type="file" class="form-control">
+                    <span asp-validation-for="Product.ImageUrl" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-8 offset-4">
+                    <button type="submit" class="btn btn-success" onclick="onSubmit()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="https://cdn.tiny.cloud/1/dgbmw7zxon9azcwtek2jkgo9ipmnbe1804wimzgz13396ef9/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#description',
+            height: 300,
+            plugins: 'code',
+            toolbar: 'undo redo | formatselect | bold italic backcolor | code',
+            menubar: false
+        });
+
+        function validateInput() {
+            var descriptionValue = tinymce.get('description').getContent();
+            if (!descriptionValue.trim()) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Description is required',
+                    text: 'Please enter a description for the product.',
+                });
+                return false;
+            }
+            return true;
+        }
+
+        function onSubmit() {
+            if (validateInput()) {
+                // Continue with form submission
+                // Example: document.getElementById('yourFormId').submit();
+            }
+        }
+    </script>
+}

@@ -159,3 +159,6 @@ installed the rendering packages created the controller and updated the controll
 
 1924 
 created the index in the view and and created the new js file for the product and fixed the controller from any errors 
+
+1954
+created an upsertcs for products and used the files from assignment 2 added the textarea using the tinycloud api
