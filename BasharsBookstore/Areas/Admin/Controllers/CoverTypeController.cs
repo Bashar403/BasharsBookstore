@@ -27,7 +27,7 @@ namespace BasharsBookstore.Areas.Admin.Controllers
                 return View(coverType);
             }
 
-            coverType = _unitOfWork.CoverType.GetById(id.GetValueOrDefault());
+            coverType = _unitOfWork.CoverType.Get(id.GetValueOrDefault());
             if (coverType == null)
             {
                 return NotFound();
@@ -67,7 +67,7 @@ namespace BasharsBookstore.Areas.Admin.Controllers
         [HttpDelete]
         public IActionResult Delete(int id)
         {
-            var objFromDb = _unitOfWork.CoverType.GetById(id);
+            var objFromDb = _unitOfWork.CoverType.Get(id);
             if (objFromDb == null)
             {
                 return Json(new { success = false, message = "Error while deleting" });

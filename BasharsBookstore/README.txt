@@ -162,3 +162,7 @@ created the index in the view and and created the new js file for the product an
 
 1954
 created an upsertcs for products and used the files from assignment 2 added the textarea using the tinycloud api
+
+1552 2023-11-20
+couple of things have been changed my iCover and covertype have been changed to follow the same template as Category, before when i was createing a cover type it was not doing anything becuase by upsert didnt have a post method,
+but now i changed so it is posting the item to the data base but not showing it in the index 

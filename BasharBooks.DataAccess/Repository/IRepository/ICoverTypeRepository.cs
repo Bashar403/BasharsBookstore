@@ -7,13 +7,8 @@ using System.Threading.Tasks;
 
 namespace BasharBooks.DataAccess.Repository.IRepository
 {
-    public interface ICoverTypeRepository : IDisposable
-    {
-        IEnumerable<CoverType> GetAll();   
-        CoverType GetById(int id);          
-        void Add(CoverType coverType);      
+    public interface ICoverTypeRepository : IRepository<CoverType>
+    {     
         void Update(CoverType coverType);   
-        void Remove(int id);                
-        void Save();
     }
 }

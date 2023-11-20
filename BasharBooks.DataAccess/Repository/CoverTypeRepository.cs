@@ -7,52 +7,28 @@ using BasharsBookstore.DataAccess.Data;
 using BasharsBookstore.Models;
 using BasharBooks.DataAccess.Repository.IRepository;
 using BasharBooks.Models;
+using System.Linq.Expressions;
 
 namespace BasharBooks.DataAccess.Repository
 {
-    public class CoverTypeRepository : ICoverTypeRepository
+    public class CoverTypeRepository : Repository<CoverType>, ICoverTypeRepository
     {
         private readonly ApplicationDbContext _db;
 
-        public CoverTypeRepository(ApplicationDbContext db)
+        public CoverTypeRepository(ApplicationDbContext db): base(db)
         {
             _db = db;
-        }
-        public void Add(CoverType coverType)
-        {
-            _db.CoverTypes.Add(coverType);
-        }
-
-        public void Dispose()
-        {
-            _db.Dispose();
-        }
-
-        public IEnumerable<CoverType> GetAll()
-        {
-            return _db.CoverTypes.ToList();
-        }
-
-        public CoverType GetById(int id)
-        {
-            return _db.CoverTypes.Find(id);
-        }
-
-        public void Remove(int id)
-        {
-            var coverType = _db.CoverTypes.Find(id);
-            if (coverType != null)
-                _db.CoverTypes.Remove(coverType);
-        }
-
-        public void Save()
-        {
-            _db.SaveChanges();
         }
 
         public void Update(CoverType coverType)
         {
-            _db.Dispose();
+            ///throw new NotImplementedException();
+            var objFromDb = _db.CoverTypes.FirstOrDefault(s => s.Id == coverType.Id);
+            if (objFromDb != null)
+            {
+                objFromDb.Name = coverType.Name;
+                _db.SaveChanges();
+            }
         }
     }
 }
