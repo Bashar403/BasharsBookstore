@@ -156,3 +156,6 @@ added the webhostEnvironment call and the using statment and changed the public 
 
 1849
 installed the rendering packages created the controller and updated the controller 
+
+1924 
+created the index in the view and and created the new js file for the product and fixed the controller from any errors 

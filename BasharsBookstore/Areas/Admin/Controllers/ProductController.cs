@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using BasharBooks.Models.ViewModels;
 
 namespace BasharsBookstore.Areas.Admin.Controllers
 {
@@ -51,7 +52,7 @@ namespace BasharsBookstore.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            return View(ProductVM);
+            return View(productVM);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -76,7 +77,7 @@ namespace BasharsBookstore.Areas.Admin.Controllers
         #region API CALLS
         public IActionResult GetAll()
         {
-            var allObj = _unitOfWork.Product.GetAll(includeProperties:"Category,CoverType");
+            var allObj = _unitOfWork.Product.GetAll(includeProperties :"Category,CoverType");
             return Json(new { data = allObj });
         }
 

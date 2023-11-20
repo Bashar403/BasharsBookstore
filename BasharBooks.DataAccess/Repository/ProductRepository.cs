@@ -1,8 +1,9 @@
-﻿using BasharBooks.Models;
-using BasharBooks.DataAccess.Repository.IRepository;
+﻿using BasharBooks.DataAccess.Repository.IRepository;
+using BasharBooks.Models;
+using BasharsBookstore.DataAccess.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using BasharsBookstore.DataAccess.Data;
 
 namespace BasharBooks.DataAccess.Repository
 {
@@ -25,7 +26,12 @@ namespace BasharBooks.DataAccess.Repository
             _db.Dispose();
         }
 
-        public IEnumerable<Product> GetAll()
+        public Product Get(int id)
+        {
+            return _db.Products.FirstOrDefault(p => p.Id == id);
+        }
+
+        public IEnumerable<Product> GetAll(string includeProperties)
         {
             return _db.Products.ToList();
         }
