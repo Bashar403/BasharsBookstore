@@ -169,3 +169,7 @@ but now i changed so it is posting the item to the data base but not showing it 
 
 1512
 fixed the problem not displaying the items it was in my javascript file i had it pointing to the wrong table
+
+
+2023-11-27
+1626: i wll implement the img method to be able to save images we do that by editing the productcontroller
