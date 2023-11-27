@@ -179,3 +179,5 @@ fixed the problem not displaying the items it was in my javascript file i had it
 1635: updated the Customer homecontroller to work with iunitofwork and add the using statments	
 
 1638: updated the index for customer where he will be able to see the books 
+
+1656 fixed the migration problem and the model problem 20231127215507_fixedProductkey
