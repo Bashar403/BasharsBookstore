@@ -176,4 +176,6 @@ fixed the problem not displaying the items it was in my javascript file i had it
 
 1632: updated the iproductrepo and productrepo to follow the same convintion as category and covertype
 
-1535: updated the Customer homecontroller to work with iunitofwork and add the using statments 
+1635: updated the Customer homecontroller to work with iunitofwork and add the using statments	
+
+1638: updated the index for customer where he will be able to see the books 
