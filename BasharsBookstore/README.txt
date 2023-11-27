@@ -175,3 +175,5 @@ fixed the problem not displaying the items it was in my javascript file i had it
 1626: i wll implement the img method to be able to save images we do that by editing the productcontroller
 
 1632: updated the iproductrepo and productrepo to follow the same convintion as category and covertype
+
+1535: updated the Customer homecontroller to work with iunitofwork and add the using statments 
