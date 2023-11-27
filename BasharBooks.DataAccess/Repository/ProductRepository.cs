@@ -7,52 +7,13 @@ using System.Linq;
 
 namespace BasharBooks.DataAccess.Repository
 {
-    public class ProductRepository : IProductRepository
+    public class ProductRepository : Repository<Product>, IProductRepository
     {
         private readonly ApplicationDbContext _db;
 
-        public ProductRepository(ApplicationDbContext db)
+        public ProductRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
-        }
-
-        public void Add(Product product)
-        {
-            _db.Products.Add(product);
-        }
-
-        public void Dispose()
-        {
-            _db.Dispose();
-        }
-
-        public Product Get(int id)
-        {
-            return _db.Products.FirstOrDefault(p => p.Id == id);
-        }
-
-        public IEnumerable<Product> GetAll(string includeProperties)
-        {
-            return _db.Products.ToList();
-        }
-
-        public Product GetById(int id)
-        {
-            return _db.Products.FirstOrDefault(p => p.Id == id);
-        }
-
-        public void Remove(int id)
-        {
-            var product = _db.Products.Find(id);
-            if (product != null)
-            {
-                _db.Products.Remove(product);
-            }
-        }
-
-        public void Save()
-        {
-            _db.SaveChanges();
         }
 
         public void Update(Product product)
