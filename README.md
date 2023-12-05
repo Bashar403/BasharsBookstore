@@ -1,18 +1,25 @@
-# Book Store Assignment
+# BasharBooks Store
 
-This repository contains my Book Store project for Assignment 2. This assignment is worth a total of 25% of the grade for the course. The current submission, Part 2, contributes 5%.
+BasharBooks Store is an ASP.NET Core MVC web application for online book shopping.
 
-## Part 1: Initial Setup and Theme Customization
+## Features
 
-- Created the initial ASP.NET Core project with a unique Bootswatch theme.
-- Initial project setup and configurations committed to GitHub.
+- Browse, search, and purchase books.
+- User authentication and admin panel for book and user management.
+- Built using ASP.NET Core 5.0 and Entity Framework Core.
+- Deployed on Microsoft Azure App Service.
 
-## Part 2: Database and Repository Implementation
+## Getting Started
 
-- Updated `appsettings.json` with new database settings.
-- Created migration files for database schema changes.
-- Implemented the Repository pattern with `CategoryRepository` & `ICategoryRepository`.
-- Established `UnitOfWork` for managing repository operations.
-- Verified application functionality in a web browser.
+1. Clone the repository.
 
-Name: Bashar Matar
+2. Configure the database connection string in `appsettings.json`.
+
+3. Build and run the application locally.
+
+
+## Usage
+
+- Users can browse, search, and purchase books.
+- Admins can manage books and users via the admin panel.
+
